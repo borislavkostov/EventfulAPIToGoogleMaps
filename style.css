@@ -1,0 +1,14 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body
+{
+	font-family:""Times New Roman"",Georgia, Serif;
+}
+
+#map { 
+	  width: 600px;
+	  height: 500px;
+	  float:center;
+	  margin : 0 auto;
+	}		
