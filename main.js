@@ -1,17 +1,25 @@
-// JavaScript Document
+// JavaScript Documentz
 
 var map = new google.maps.Map(document.getElementById('map'),{
 	zoom:2,
 	center:new google.maps.LatLng(36.05178307933835,42.49737373046878),
 	mapTypeId:google.maps.MapTypeId.ROADMAP
 	});
+//-----------------------------------------------
+	function download_file() 
+	{
+	for(i=0;i<10;i++)//This is for page number counter
+   {
+   	var url = "http://api.eventful.com/json/events/search?c=music&app_key=API_KEY&page_number="+i+"&date=Future"
+  	window.location = url;
 	
 
-$(window).load(function () {
-// Send the Request to show all future events of Andrea Bocelli     
-jsonRequest('AndreaB.json');
+$(window).load(function () {    
+jsonRequest(url);
 });
-		
+    }
+	}
+//------------------------------------------------------		
 /*
 Function for JSON Request
 */
